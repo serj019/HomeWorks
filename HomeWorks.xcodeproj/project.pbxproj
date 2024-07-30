@@ -44,6 +44,7 @@
 		E0B142582C58EB6E002CE4AA /* HomeWorksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B1425C2C58EB6E002CE4AA /* HomeWorksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorksUITests.swift; sourceTree = "<group>"; };
 		E0B1425E2C58EB6E002CE4AA /* HomeWorksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0D2C9B12C5923730052983F /* PinCodeEnter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PinCodeEnter; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		E0B142352C58EB6D002CE4AA = {
 			isa = PBXGroup;
 			children = (
+				E0D2C9B12C5923730052983F /* PinCodeEnter */,
 				E0B142402C58EB6D002CE4AA /* HomeWorks */,
 				E0B142512C58EB6E002CE4AA /* HomeWorksTests */,
 				E0B1425B2C58EB6E002CE4AA /* HomeWorksUITests */,
