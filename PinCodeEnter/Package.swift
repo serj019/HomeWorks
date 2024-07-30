@@ -10,14 +10,24 @@ let package = Package(
         .library(
             name: "PinCodeEnter",
             targets: ["PinCodeEnter"]),
+        .library(
+            name: "PinCodeScreen",
+            targets: ["PinCodeScreen"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: "6.6.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "PinCodeEnter"),
+        .target(
+            name: "PinCodeScreen"),
         .testTarget(
             name: "PinCodeEnterTests",
-            dependencies: ["PinCodeEnter"]),
+            dependencies: ["PinCodeEnter"],
+            plugins: [.plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin")]
+        ),
     ]
 )

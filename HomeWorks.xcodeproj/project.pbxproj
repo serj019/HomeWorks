@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E08C59762C59423600CA6843 /* PinCodeScreen in Frameworks */ = {isa = PBXBuildFile; productRef = E08C59752C59423600CA6843 /* PinCodeScreen */; };
 		E0B142422C58EB6D002CE4AA /* HomeWorksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B142412C58EB6D002CE4AA /* HomeWorksApp.swift */; };
 		E0B142442C58EB6D002CE4AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B142432C58EB6D002CE4AA /* ContentView.swift */; };
 		E0B142462C58EB6E002CE4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B142452C58EB6E002CE4AA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		E0B142532C58EB6E002CE4AA /* HomeWorksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B142522C58EB6E002CE4AA /* HomeWorksTests.swift */; };
 		E0B1425D2C58EB6E002CE4AA /* HomeWorksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1425C2C58EB6E002CE4AA /* HomeWorksUITests.swift */; };
 		E0B1425F2C58EB6E002CE4AA /* HomeWorksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1425E2C58EB6E002CE4AA /* HomeWorksUITestsLaunchTests.swift */; };
+		E0D2C9B42C59375A0052983F /* PinCodeEnter in Frameworks */ = {isa = PBXBuildFile; productRef = E0D2C9B32C59375A0052983F /* PinCodeEnter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E08C59742C593ADE00CA6843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E0B1423E2C58EB6D002CE4AA /* HomeWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B142412C58EB6D002CE4AA /* HomeWorksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorksApp.swift; sourceTree = "<group>"; };
 		E0B142432C58EB6D002CE4AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D2C9B42C59375A0052983F /* PinCodeEnter in Frameworks */,
+				E08C59762C59423600CA6843 /* PinCodeScreen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,7 @@
 				E0B142512C58EB6E002CE4AA /* HomeWorksTests */,
 				E0B1425B2C58EB6E002CE4AA /* HomeWorksUITests */,
 				E0B1423F2C58EB6D002CE4AA /* Products */,
+				E0D2C9B22C59375A0052983F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +102,7 @@
 		E0B142402C58EB6D002CE4AA /* HomeWorks */ = {
 			isa = PBXGroup;
 			children = (
+				E08C59742C593ADE00CA6843 /* Info.plist */,
 				E0B142412C58EB6D002CE4AA /* HomeWorksApp.swift */,
 				E0B142432C58EB6D002CE4AA /* ContentView.swift */,
 				E0B142452C58EB6E002CE4AA /* Assets.xcassets */,
@@ -129,6 +136,13 @@
 			path = HomeWorksUITests;
 			sourceTree = "<group>";
 		};
+		E0D2C9B22C59375A0052983F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +159,10 @@
 			dependencies = (
 			);
 			name = HomeWorks;
+			packageProductDependencies = (
+				E0D2C9B32C59375A0052983F /* PinCodeEnter */,
+				E08C59752C59423600CA6843 /* PinCodeScreen */,
+			);
 			productName = HomeWorks;
 			productReference = E0B1423E2C58EB6D002CE4AA /* HomeWorks.app */;
 			productType = "com.apple.product-type.application";
@@ -426,6 +444,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWorks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +473,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWorks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeWorks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,6 +604,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E08C59752C59423600CA6843 /* PinCodeScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PinCodeScreen;
+		};
+		E0D2C9B32C59375A0052983F /* PinCodeEnter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PinCodeEnter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0B142362C58EB6D002CE4AA /* Project object */;
 }

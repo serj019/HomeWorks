@@ -1,2 +1,7 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import SwiftUI
+import Foundation
+
+
+class A {
+    var ccc = Strings.titleSettings
+}
