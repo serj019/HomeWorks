@@ -3,5 +3,5 @@ import Foundation
 
 
 class A {
-    var ccc = Strings.titleSettings
+    
 }

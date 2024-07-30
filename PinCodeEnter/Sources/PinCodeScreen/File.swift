@@ -8,5 +8,5 @@
 import Foundation
 
 class A {
-    var vvvv = String.titleSettings
+    //var vvvv = String.titleSettings
 }
